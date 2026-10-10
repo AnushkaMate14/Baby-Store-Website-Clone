@@ -1,0 +1,979 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Home - Baby Store</title>
+
+  <link rel="icon" type="image/png" href="Images/Favicon.png" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Sriracha&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="CSS/Style.css" />
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg position-absolute top-0 start-0 w-100 z-3">
+
+      <div class="container-fluid">
+
+        <a href="index.html" class="navbar-brand">
+          <img src="Images/baby-store-logo.svg" alt="BabyKu Logo" width="105" />
+        </a>
+
+        <!-- MOBILE CART -->
+        <div class="mobile-cart d-lg-none position-relative pink fs-5 ms-auto me-3"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#cartPanel"
+          role="button">
+
+          <i class="bi bi-basket" aria-hidden="true"></i>
+
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger p-1">
+            0
+          </span>
+
+          <span class="visually-hidden">Cart items: 0</span>
+
+        </div>
+
+        <button class="navbar-toggler" type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+
+          <ul class="navbar-nav ms-4 gap-lg-3">
+
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                Home
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="Shop.html" class="nav-link">
+                Shop
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="AboutUs.html" class="nav-link">
+                About Us
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="Testimonial.html" class="nav-link active">
+                Testimonial
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="Contact.html" class="nav-link">
+                Contact Us
+              </a>
+            </li>
+            <li class="nav-item d-lg-none">
+                            <a href="#" class="nav-link" id="mobileProfile">
+                                <i class="bi bi-person-fill me-2"></i>
+                                Profile
+                            </a>
+                        </li>
+
+          </ul>
+
+          <div class="ms-auto d-flex align-items-center gap-4">
+
+            <!-- DESKTOP CART -->
+            <div class="position-relative pink fs-5 d-none d-lg-block"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#cartPanel"
+              role="button">
+
+              <i class="bi bi-basket"></i>
+
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger p-1">
+                0
+              </span>
+
+            </div>
+
+                        <i class="bi bi-person-fill pink fs-5" id="profileIcon" role="button" aria-label="Profile"></i>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <section class="testimonial-main-section position-relative overflow-hidden">
+
+      <img src="Images/baby-store-blob-pink.svg"
+        class="testimonial-pink-shape position-absolute"
+        alt=""
+        aria-hidden="true" />
+
+      <img src="Images/baby-store-blob-shape-green.svg"
+        class="testimonial-mint-shape position-absolute"
+        alt=""
+        aria-hidden="true" />
+
+      <div class="container position-relative z-1">
+
+        <div class="row align-items-end testimonial-heading">
+
+          <div class="col-lg-6">
+
+            <p class="testimonial-eyebrow">
+              WHAT PEOPLE SAY
+            </p>
+
+            <h1 class="testimonial-main-title">
+              Testimonial
+            </h1>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="testimonial-rating d-flex align-items-center position-relative">
+
+              <img src="Images/baby-store-hero-bg-blob-yellow.svg"
+                class="testimonial-yellow-blob position-absolute"
+                alt=""
+                aria-hidden="true" />
+
+              <span class="testimonial-rating-blob"></span>
+
+              <h2 class="testimonial-rating-number">
+                4.8
+              </h2>
+
+              <div class="ms-4 position-relative">
+
+                <div class="testimonial-stars">
+                  ★★★★★
+                </div>
+
+                <p class="testimonial-rating-text">
+                  Based on 14k+ reviews
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="testimonial-main-card position-relative">
+
+          <div class="row h-100 align-items-center">
+
+            <div class="col-lg-6">
+
+              <div class="testimonial-card-content">
+
+                <div class="testimonial-card-stars">
+                  ★★★★★
+                </div>
+
+                <p class="testimonial-quote">
+                  “Tristique purus odio massa fusce mauris sit arcu viverra
+                  iaculis arcu sed natoque fringilla cras morbi erat donec
+                  amet vivamus id mauris at venenatis.”
+                </p>
+
+                <p class="testimonial-name">
+                  ELLEN STEWART
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-6 h-100">
+
+              <img src="Images/baby-store-featured-reviewer-img (1).png"
+                class="testimonial-main-image"
+                alt="Mother with baby" />
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="testimonials-list-section py-5">
+
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-lg-2 g-5">
+
+          <div class="col">
+
+            <div class="testimonial-list-card position-relative rounded-4 p-4 ps-5">
+
+              <img src="Images/baby-store-reviewer-1.jpg"
+                class="testimonial-user-img position-absolute rounded-4"
+                alt="Emma Hart" />
+
+              <div class="ms-5">
+
+                <div class="testimonial-list-stars mb-3">
+                  ★★★★★
+                </div>
+
+                <p class="testimonial-list-text mb-4">
+                  “Massa amet, at dolor tellus pellentesque aenean in eget
+                  massa tincidunt habitasse volutpat adipiscing sed id sit
+                  auctor eu vivamus nulla.”
+                </p>
+
+                <p class="testimonial-list-name mb-0">
+                  EMMA HART
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="col">
+
+            <div class="testimonial-list-card position-relative rounded-4 p-4 ps-5">
+
+              <img src="Images/baby-store-reviewer-2.jpg"
+                class="testimonial-user-img position-absolute rounded-4"
+                alt="Dianna Johnson" />
+
+              <div class="ms-5">
+
+                <div class="testimonial-list-stars mb-3">
+                  ★★★★★
+                </div>
+
+                <p class="testimonial-list-text mb-4">
+                  “Malesuada eu mattis fermentum etiam arcu risus lacus velit
+                  neque mi integer tincidunt sociis enim gravida in
+                  pellentesque cursus sed.”
+                </p>
+
+                <p class="testimonial-list-name mb-0">
+                  DIANNA JOHNSON
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="col">
+
+            <div class="testimonial-list-card position-relative rounded-4 p-4 ps-5">
+
+              <img src="Images/baby-store-reviewer-3.jpg"
+                class="testimonial-user-img position-absolute rounded-4"
+                alt="Julia Stone" />
+
+              <div class="ms-5">
+
+                <div class="testimonial-list-stars mb-3">
+                  ★★★★★
+                </div>
+
+                <p class="testimonial-list-text mb-4">
+                  “Mi nulla arcu tempus, ipsum adipiscing diam facilisi
+                  placerat vel at ullamcorper lectus porttitor turpis leo ante
+                  at facilisi eu, hendrerit massa turpis lectus.”
+                </p>
+
+                <p class="testimonial-list-name mb-0">
+                  JULIA STONE
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="col">
+
+            <div class="testimonial-list-card position-relative rounded-4 p-4 ps-5">
+
+              <img src="Images/baby-store-reviewer-4.jpg"
+                class="testimonial-user-img position-absolute rounded-4"
+                alt="Amy Watt" />
+
+              <div class="ms-5">
+
+                <div class="testimonial-list-stars mb-3">
+                  ★★★★★
+                </div>
+
+                <p class="testimonial-list-text mb-4">
+                  “Congue donec pharetra elementum vulputate nisi, adipiscing
+                  morbi cursus mi pharetra nunc, id tempus lectus est, vitae,
+                  proin ac turpis consectetur est molestie cras fermentum,
+                  pellentesque nibh dui.”
+                </p>
+
+                <p class="testimonial-list-name mb-0">
+                  AMY WATT
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="col">
+
+            <div class="testimonial-list-card position-relative rounded-4 p-4 ps-5">
+
+              <img src="Images/baby-store-reviewer-5.jpg"
+                class="testimonial-user-img position-absolute rounded-4"
+                alt="Amber Odinson" />
+
+              <div class="ms-5">
+
+                <div class="testimonial-list-stars mb-3">
+                  ★★★★★
+                </div>
+
+                <p class="testimonial-list-text mb-4">
+                  “Augue sed enim imperdiet malesuada quam condimentum enim ut
+                  morbi lectus mauris eget odio placerat lorem donec donec
+                  purus, eget ornare eu, nisi justo tincidunt orci enim non id
+                  fringilla.”
+                </p>
+
+                <p class="testimonial-list-name mb-0">
+                  AMBER ODINSON
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="col">
+
+            <div class="testimonial-list-card position-relative rounded-4 p-4 ps-5">
+
+              <img src="Images/baby-store-reviewer-6.jpg"
+                class="testimonial-user-img position-absolute rounded-4"
+                alt="Kathrine Doe" />
+
+              <div class="ms-5">
+
+                <div class="testimonial-list-stars mb-3">
+                  ★★★★★
+                </div>
+
+                <p class="testimonial-list-text mb-4">
+                  “Ultrices nisl tincidunt porttitor sed odio nulla a, amet
+                  aliquam tempor interdum neque, ut gravida magna massa auctor
+                  sed pretium.”
+                </p>
+
+                <p class="testimonial-list-name mb-0">
+                  KATHRINE DOE
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="promo-section py-5">
+
+      <div class="container promo-container">
+
+        <div class="row gx-5 gy-4 justify-content-center">
+
+          <div class="col-md-6 col-xl-4">
+
+            <article class="promo-card promo-princess position-relative overflow-hidden rounded-4">
+
+              <img src="Images/baby-store-promo-banner-blob-bg-1.svg"
+                class="promo-blob position-absolute bottom-0 start-0 w-100"
+                alt=""
+                aria-hidden="true" />
+
+              <div class="promo-copy position-relative z-1 text-center pt-4">
+
+                <p class="promo-eyebrow text-uppercase fw-bold mb-2">
+                  Best choice for your
+                </p>
+
+                <h2 class="promo-title mb-0">
+                  Princess
+                </h2>
+
+              </div>
+
+              <img src="Images/baby-store-promo-banner-img-1.png"
+                class="promo-princess-image position-absolute z-1"
+                alt="Sleeping baby girl in a pink outfit" />
+
+              <a href="Shop.html"
+                class="promo-link position-absolute z-2 text-uppercase fw-bold text-decoration-none">
+
+                Shop Now <span aria-hidden="true">&#8594;</span>
+
+              </a>
+
+            </article>
+
+          </div>
+
+
+          <div class="col-md-6 col-xl-4">
+
+            <article class="promo-card promo-newborn position-relative overflow-hidden rounded-4">
+
+              <img src="Images/baby-store-promo-banner-blob-bg-2.svg"
+                class="promo-newborn-blob position-absolute top-0 end-0"
+                alt=""
+                aria-hidden="true" />
+
+              <div class="promo-copy position-relative z-1 pt-4 ps-4">
+
+                <p class="promo-discount fw-bold fst-italic mb-4">
+                  20% OFF
+                </p>
+
+                <h2 class="promo-title mb-2">
+                  New Born<br />Essentials
+                </h2>
+
+                <p class="promo-text mb-0">
+                  Id neque nunc in tortor<br />nec posuere proin.
+                </p>
+
+              </div>
+
+              <img src="Images/baby-store-promo-banner-img.png"
+                class="promo-newborn-image position-absolute z-1"
+                alt="Baby wearing a floral head wrap" />
+
+              <a href="Shop.html"
+                class="promo-link position-absolute z-2 text-uppercase fw-bold text-decoration-none">
+
+                Shop Now <span aria-hidden="true">&#8594;</span>
+
+              </a>
+
+            </article>
+
+          </div>
+
+
+          <div class="col-md-6 col-xl-4">
+
+            <article class="promo-card promo-toys position-relative overflow-hidden rounded-4">
+
+              <img src="Images/baby-store-promo-banner-blob-bg-3.svg"
+                class="promo-blob position-absolute top-0 start-0 w-100"
+                alt=""
+                aria-hidden="true" />
+
+              <div class="promo-copy position-relative z-1 pt-4 ps-4">
+
+                <p class="promo-eyebrow promo-eyebrow-light text-uppercase fw-bold mb-2">
+                  New arrivals
+                </p>
+
+                <h2 class="promo-title promo-title-light mb-0">
+                  Hot Toys
+                </h2>
+
+              </div>
+
+              <span
+                class="promo-discount-badge position-absolute z-2 rounded-circle text-center fw-bold">
+                25%<br />OFF
+              </span>
+
+              <img src="Images/baby-store-promo-banner-img-3.png"
+                class="promo-toys-image position-absolute z-1"
+                alt="Two colourful toy robots" />
+
+              <a href="Shop.html"
+                class="promo-link position-absolute z-2 text-uppercase fw-bold text-decoration-none">
+
+                Shop Now <span aria-hidden="true">&#8594;</span>
+
+              </a>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="newsletter-section py-5">
+
+      <div class="container">
+
+        <div class="newsletter-box position-relative overflow-hidden rounded-4">
+
+          <div class="newsletter-peach-shape position-absolute"></div>
+
+          <div class="newsletter-green-shape position-absolute"></div>
+
+          <div class="newsletter-content position-relative">
+
+            <p class="newsletter-eyebrow mb-3">
+              SUBSCRIBE TO OUR NEWSLETTER
+            </p>
+
+            <h2 class="newsletter-title mb-3">
+              Don't Miss Out!
+            </h2>
+
+            <p class="newsletter-text mb-5">
+              Get the latest on sales, special offer, new releases and more...
+            </p>
+
+            <form id="newsletterForm"
+              class="newsletter-form d-flex flex-wrap gap-3">
+
+              <input type="email"
+                id="newsletterEmail"
+                class="form-control newsletter-input"
+                placeholder="Email Address *"
+                required />
+
+              <button type="submit"
+                class="btn newsletter-button">
+
+                SUBSCRIBE
+
+              </button>
+
+            </form>
+
+            <div id="newsletterSuccess"
+              class="newsletter-success text-center d-none">
+
+              <div class="success-icon">
+                <i class="bi bi-check2-circle"></i>
+              </div>
+
+              <h3>
+                Thank you
+              </h3>
+
+              <p>
+                Your form has been submitted successfully. We'll review your
+                details and get back to you soon.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- SHOPPING CART -->
+
+  <div class="offcanvas offcanvas-end cart-panel"
+    tabindex="-1"
+    id="cartPanel"
+    aria-labelledby="cartPanelLabel">
+
+    <div class="offcanvas-header cart-header">
+
+      <h5 class="offcanvas-title"
+        id="cartPanelLabel">
+        Shopping Cart
+      </h5>
+
+      <button type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close">
+      </button>
+
+    </div>
+
+
+    <div class="offcanvas-body cart-body"
+      id="cartItems">
+
+      <!-- Cart products will come here -->
+
+    </div>
+
+
+    <div class="cart-footer">
+
+      <div class="cart-subtotal">
+
+        <span>
+          Subtotal:
+        </span>
+
+        <span id="cartSubtotal">
+          $0.00
+        </span>
+
+      </div>
+
+      <button type="button"
+        class="cart-button">
+        VIEW CART
+      </button>
+
+      <button type="button"
+        class="cart-button">
+        CHECKOUT
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <footer class="footer-section">
+
+    <div class="container">
+
+      <div class="row footer-main">
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+
+          <a href="index.html"
+            class="footer-logo d-inline-block mb-4">
+
+            <img src="Images/baby-store-logo.svg"
+              alt="BabyKu Logo">
+
+          </a>
+
+          <p>
+            123 Fifth Ave, New York, NY 12004.
+          </p>
+
+          <p>
+            +1 123 456 78 90
+          </p>
+
+          <p>
+            mail@example.com
+          </p>
+
+          <div class="footer-socials mt-3">
+
+            <a href="#">
+              <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="#">
+              <i class="bi bi-twitter"></i>
+            </a>
+
+            <a href="#">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="bi bi-youtube"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+
+          <h5>
+            Customer Service
+          </h5>
+
+          <ul class="list-unstyled">
+
+            <li>
+              <a href="#">
+                Contact Us
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Help & FAQs
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Payment Method
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Delivery Information
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Track Your Order
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Return & Exchanges
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+
+          <h5>
+            Categories
+          </h5>
+
+          <ul class="list-unstyled">
+
+            <li>
+              <a href="#">
+                Clothing & Fashion
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Toys
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                School Supplies
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Birthday Party Supplies
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Baby Diapering
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="col-lg-3 col-md-6">
+
+          <h5>
+            Our Company
+          </h5>
+
+          <ul class="list-unstyled">
+
+            <li>
+              <a href="#">
+                Corporate Information
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Privacy & Cookies Policy
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Terms & Condition
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Promo & Terms
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <p class="mb-0">
+        Copyright © 2026 Baby Store | Powered by Baby Store
+      </p>
+
+    </div>
+
+  </footer>
+  <!-- LOGIN POPUP -->
+<div class="login-modal" id="loginModal">
+
+    <div class="login-overlay">
+
+        <div class="login-box">
+
+            <button type="button" class="login-close" id="loginClose">
+                &times;
+            </button>
+
+            <div id="loginFormContainer">
+
+                <label for="loginEmail">
+                    Username or Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    class="login-input"
+                >
+
+                <label for="loginPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    class="login-input"
+                >
+
+                <div class="login-remember">
+
+                    <input
+                        type="checkbox"
+                        id="rememberMe"
+                        checked
+                    >
+
+                    <label for="rememberMe">
+                        Remember Me
+                    </label>
+
+                </div>
+
+                <button type="button" id="loginButton" class="login-button">
+                    LOG IN
+                </button>
+
+                <p id="loginMessage" class="login-message"></p>
+
+            </div>
+
+
+            <!-- LOGGED IN -->
+            <div id="logoutContainer" class="d-none">
+
+                <p class="logged-in-text">
+                    You are logged in.
+                </p>
+
+                <button type="button" id="logoutButton" class="login-button">
+                    LOG OUT
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="JS/Script.js"></script>
+
+</body>
+
+</html>

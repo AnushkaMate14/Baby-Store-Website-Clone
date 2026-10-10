@@ -1,0 +1,1522 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home - Baby Store</title>
+
+    <link rel="icon" type="image/png" href="Images/Favicon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Sriracha&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/Style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg position-absolute top-0 start-0 w-100 z-3">
+
+            <div class="container-fluid">
+
+                <a href="index.html" class="navbar-brand">
+
+                    <img src="Images/baby-store-logo.svg" alt="BabyKu Logo" width="105">
+
+                </a>
+
+                <!-- MOBILE CART -->
+                <div class="mobile-cart d-lg-none position-relative pink fs-5 ms-auto me-3" id="mobileCart"
+                    data-bs-toggle="offcanvas" data-bs-target="#cartPanel" role="button">
+
+                    <i class="bi bi-basket" aria-hidden="true"></i>
+
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger p-1">0</span>
+
+                    <span class="visually-hidden">Cart items: 0</span>
+
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+
+                    <ul class="navbar-nav ms-4 gap-lg-3">
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="Shop.html" class="nav-link">
+                                Shop
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="AboutUs.html" class="nav-link">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="Testimonial.html" class="nav-link">
+                                Testimonial
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="Contact.html" class="nav-link">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a href="#" class="nav-link" id="mobileProfile">
+                                <i class="bi bi-person-fill me-2"></i>
+                                Profile
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="ms-auto d-flex align-items-center gap-4">
+
+                        <!-- DESKTOP CART -->
+                        <div class="position-relative pink fs-5 d-none d-lg-block" id="desktopCart"
+                            data-bs-toggle="offcanvas" data-bs-target="#cartPanel" role="button">
+
+                            <i class="bi bi-basket"></i>
+
+                            <span class="position-absolute top-0 start-100
+                                         translate-middle
+                                         badge rounded-circle
+                                         bg-danger p-1">
+
+                                0
+
+                            </span>
+
+                        </div>
+
+                        <i class="bi bi-person-fill pink fs-5" id="profileIcon" role="button" aria-label="Profile"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero-section position-relative overflow-hidden d-flex align-items-center">
+
+            <img src="Images/baby-store-hero-bg-blob-pink.svg" class="hero-pink-blob position-absolute" alt=""
+                aria-hidden="true">
+
+            <div class="hero-mint-shape position-absolute" aria-hidden="true"></div>
+
+            <div class="hero-mint-line position-absolute" aria-hidden="true"></div>
+
+            <div class="container position-relative z-1">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6 pt-5 pt-lg-0">
+
+                        <div class="hero-content mx-auto mx-lg-0">
+
+                            <p class="hero-offer text-uppercase fw-bold mb-4">
+
+                                <i class="bi bi-tag-fill me-2"></i>
+                                Flat 30% Off + Cashback! *
+
+                            </p>
+
+                            <h1 class="hero-title mb-4">
+                                Baby Essential<br>Fashion &amp; Nursery
+                            </h1>
+
+                            <p class="hero-description mb-4">
+
+                                Fermentum, cursus ultrices porttitor tincidunt suscipit quam facilisis<br
+                                    class="d-none d-xl-block">
+
+                                sit massa pellentesque mi quis elit elementum tristique urna.
+
+                            </p>
+
+                            <p class="hero-note mb-4">
+                                * Enim cras quam et nullam risus nec tincidunt mattis nunc.
+                            </p>
+
+                            <div class="d-flex flex-wrap align-items-center gap-4">
+
+                                <a href="Shop.html" class="btn btn-primary hero-button text-uppercase fw-bold">
+
+                                    Shop Now
+
+                                </a>
+
+                                <span class="hero-code fw-bold fst-italic pb-3">
+                                    Use code: BEC30
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 featured-image-column">
+
+                        <div class="hero-visual position-relative mx-auto">
+
+                            <img src="Images/baby-store-hero-bg-blob-yellow.svg"
+                                class="hero-yellow-blob position-absolute" alt="" aria-hidden="true">
+
+                            <img src="Images/baby-store-hero-baby-img.png" class="hero-baby position-relative img-fluid"
+                                alt="Smiling baby sitting down">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROMO -->
+        <section class="promo-section py-5">
+
+            <div class="container promo-container">
+
+                <div class="row gx-5 gy-4 justify-content-center">
+
+                    <div class="col-md-6 col-xl-4">
+
+                        <article class="promo-card promo-princess position-relative overflow-hidden rounded-4">
+
+                            <img src="Images/baby-store-promo-banner-blob-bg-1.svg"
+                                class="promo-blob position-absolute bottom-0 start-0 w-100" alt="" aria-hidden="true">
+
+                            <div class="promo-copy position-relative z-1 text-center pt-4">
+
+                                <p class="promo-eyebrow text-uppercase fw-bold mb-2">
+                                    Best choice for your
+                                </p>
+
+                                <h2 class="promo-title mb-0">
+                                    Princess
+                                </h2>
+
+                            </div>
+
+                            <img src="Images/baby-store-promo-banner-img-1.png"
+                                class="promo-princess-image position-absolute z-1"
+                                alt="Sleeping baby girl in a pink outfit">
+
+                            <a href="Shop.html"
+                                class="promo-link position-absolute z-2 text-uppercase fw-bold text-decoration-none">
+
+                                Shop Now <span aria-hidden="true">&#8594;</span>
+
+                            </a>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="col-md-6 col-xl-4">
+
+                        <article class="promo-card promo-newborn position-relative overflow-hidden rounded-4">
+
+                            <img src="Images/baby-store-promo-banner-blob-bg-2.svg"
+                                class="promo-newborn-blob position-absolute top-0 end-0" alt="" aria-hidden="true">
+
+                            <div class="promo-copy position-relative z-1 pt-4 ps-4">
+
+                                <p class="promo-discount fw-bold fst-italic mb-4">
+                                    20% OFF
+                                </p>
+
+                                <h2 class="promo-title mb-2">
+                                    New Born<br>Essentials
+                                </h2>
+
+                                <p class="promo-text mb-0">
+                                    Id neque nunc in tortor<br>nec posuere proin.
+                                </p>
+
+                            </div>
+
+                            <img src="Images/baby-store-promo-banner-img.png"
+                                class="promo-newborn-image position-absolute z-1" alt="Baby wearing a floral head wrap">
+
+                            <a href="Shop.html"
+                                class="promo-link position-absolute z-2 text-uppercase fw-bold text-decoration-none">
+
+                                Shop Now <span aria-hidden="true">&#8594;</span>
+
+                            </a>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="col-md-6 col-xl-4">
+
+                        <article class="promo-card promo-toys position-relative overflow-hidden rounded-4">
+
+                            <img src="Images/baby-store-promo-banner-blob-bg-3.svg"
+                                class="promo-blob position-absolute top-0 start-0 w-100" alt="" aria-hidden="true">
+
+                            <div class="promo-copy position-relative z-1 pt-4 ps-4">
+
+                                <p class="promo-eyebrow promo-eyebrow-light text-uppercase fw-bold mb-2">
+                                    New arrivals
+                                </p>
+
+                                <h2 class="promo-title promo-title-light mb-0">
+                                    Hot Toys
+                                </h2>
+
+                            </div>
+
+                            <span class="promo-discount-badge position-absolute z-2 rounded-circle text-center fw-bold">
+                                25%<br>OFF
+                            </span>
+
+                            <img src="Images/baby-store-promo-banner-img-3.png"
+                                class="promo-toys-image position-absolute z-1" alt="Two colourful toy robots">
+
+                            <a href="Shop.html"
+                                class="promo-link position-absolute z-2 text-uppercase fw-bold text-decoration-none">
+
+                                Shop Now <span aria-hidden="true">&#8594;</span>
+
+                            </a>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- NEW ARRIVALS -->
+        <section class="new-arrivals-section">
+
+            <div class="container arrivals-container">
+
+                <div class="arrivals-heading text-center">
+
+                    <h2>New Arrivals</h2>
+
+                    <p class="mb-0">
+
+                        Scelerisque duis semper vitae eget mattis viverra sem risus vel suspendisse<br
+                            class="d-none d-md-block">
+
+                        lorem vestibulum pulvinar habitant sed.
+
+                    </p>
+
+                </div>
+
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 arrivals-grid">
+
+
+                    <!-- PRODUCT 1 -->
+                    <div class="col">
+
+                        <article class="product-card" data-product-id="1">
+                            <div class="product-image-wrap">
+
+                                <img src="Images/baby-store-product-img-12.jpg" class="product-image"
+                                    alt="Extra Soft Touch Lamb Doll">
+
+                                <div class="product-actions" aria-label="Product actions">
+
+                                    <button type="button" class="product-action add-to-cart" data-tooltip="Add to cart"
+                                        data-product="Extra Soft Touch Lamb Doll"
+                                        aria-label="Add Extra Soft Touch Lamb Doll to cart">
+
+                                        <i class="bi bi-basket"></i>
+
+                                    </button>
+
+                                    <button type="button" class="product-action quick-view" data-tooltip="Quick View"
+                                        data-product="Extra Soft Touch Lamb Doll"
+                                        aria-label="Quick view Extra Soft Touch Lamb Doll">
+
+                                        <i class="bi bi-eye-fill"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <div class="product-details">
+
+                                <h3>
+                                    Extra Soft Touch Lamb Doll
+                                </h3>
+
+                                <p>$8.50</p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- PRODUCT 2 -->
+                    <div class="col">
+
+                        <article class="product-card" data-product-id="2">
+                            <div class="product-image-wrap">
+
+                                <img src="Images/baby-store-product-img-11.jpg" class="product-image"
+                                    alt="Twin Cute Bunny Set Combo">
+
+                                <div class="product-actions" aria-label="Product actions">
+
+                                    <button type="button" class="product-action add-to-cart" data-tooltip="Add to cart"
+                                        data-product="Twin Cute Bunny Set Combo"
+                                        aria-label="Add Twin Cute Bunny Set Combo to cart">
+
+                                        <i class="bi bi-basket"></i>
+
+                                    </button>
+
+                                    <button type="button" class="product-action quick-view" data-tooltip="Quick View"
+                                        data-product="Twin Cute Bunny Set Combo"
+                                        aria-label="Quick view Twin Cute Bunny Set Combo">
+
+                                        <i class="bi bi-eye-fill"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <div class="product-details">
+
+                                <h3>
+                                    Twin Cute Bunny Set Combo
+                                </h3>
+
+                                <p>$40.25</p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- PRODUCT 3 -->
+                    <div class="col">
+
+                        <article class="product-card" data-product-id="3">
+                            <div class="product-image-wrap">
+
+                                <img src="Images/baby-store-product-img-10.jpg" class="product-image"
+                                    alt="Colorful Birdies on Orange Bandana">
+
+                                <div class="product-actions" aria-label="Product actions">
+
+                                    <button type="button" class="product-action add-to-cart" data-tooltip="Add to cart"
+                                        data-product="Colorful Birdies on Orange Bandana"
+                                        aria-label="Add Colorful Birdies on Orange Bandana to cart">
+
+                                        <i class="bi bi-basket"></i>
+
+                                    </button>
+
+                                    <button type="button" class="product-action quick-view" data-tooltip="Quick View"
+                                        data-product="Colorful Birdies on Orange Bandana"
+                                        aria-label="Quick view Colorful Birdies on Orange Bandana">
+
+                                        <i class="bi bi-eye-fill"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <div class="product-details">
+
+                                <h3>
+                                    Colorful Birdies on Orange Bandana
+                                </h3>
+
+                                <p>$4.75</p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- PRODUCT 4 -->
+                    <div class="col">
+
+                        <article class="product-card" data-product-id="4">
+                            <div class="product-image-wrap">
+
+                                <img src="Images/baby-store-product-img-9.jpg" class="product-image"
+                                    alt="Nutrikids Food Nutrition DHA+ Orange">
+
+                                <div class="product-actions" aria-label="Product actions">
+
+                                    <button type="button" class="product-action add-to-cart" data-tooltip="Add to cart"
+                                        data-product="Nutrikids Food Nutrition DHA+ Orange"
+                                        aria-label="Add Nutrikids Food Nutrition DHA+ Orange to cart">
+
+                                        <i class="bi bi-basket"></i>
+
+                                    </button>
+
+                                    <button type="button" class="product-action quick-view" data-tooltip="Quick View"
+                                        data-product="Nutrikids Food Nutrition DHA+ Orange"
+                                        aria-label="Quick view Nutrikids Food Nutrition DHA+ Orange">
+
+                                        <i class="bi bi-eye-fill"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <div class="product-details">
+
+                                <h3>
+                                    Nutrikids Food Nutrition DHA+ Orange
+                                </h3>
+
+                                <p>$6.50</p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WINTER COLLECTION -->
+        <section class="winter-collection-section">
+
+            <div class="container featured-collection-container">
+
+                <div class="row g-0 featured-collection overflow-hidden">
+
+                    <div class="col-lg-7 featured-copy-column">
+
+                        <img src="Images/baby-store-featured-collection-banner.jpg" class="featured-collection-image"
+                            alt="Baby wearing a warm winter coat in the snow">
+
+                    </div>
+
+                    <div class="col-lg-5">
+
+                        <div class="featured-collection-copy position-relative overflow-hidden">
+
+                            <img src="Images/baby-store-banner-bg-blob-yellow.svg"
+                                class="featured-collection-blob position-absolute" alt="" aria-hidden="true">
+
+                            <div class="position-relative z-1">
+
+                                <p class="featured-eyebrow text-uppercase fw-bold mb-5">
+                                    Season Special
+                                </p>
+
+                                <h2>
+                                    Winter Collection.<br>Grab Them Now!
+                                </h2>
+
+                                <p class="featured-description">
+
+                                    Cum sed purus felis, morbi diam mauris sollicitudin
+                                    id<br class="d-none d-xl-block">
+
+                                    aenean sed fusce pellentesque enim viverra luctus
+                                    enim<br class="d-none d-xl-block">
+
+                                    suspendisse feugiat convallis imperdiet.
+
+                                </p>
+
+                                <a href="Shop.html" class="btn featured-button text-uppercase fw-bold">
+
+                                    Shop Collection
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BEST SELLER -->
+        <section class="best-seller-section py-5">
+
+            <div class="container best-seller-container">
+
+                <div class="arrivals-heading text-center mb-5">
+
+                    <h2>Best Seller</h2>
+
+                    <p class="mb-0">
+
+                        Scelerisque duis semper vitae eget mattis viverra sem risus vel suspendisse
+
+                        <br class="d-none d-md-block">
+
+                        lorem vestibulum pulvinar habitant sed.
+
+                    </p>
+
+                </div>
+
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 row-gap-5 w-75 mx-auto">
+
+
+                    <!-- PRODUCT 1 -->
+                    <div class="col">
+
+                        <article class="product-card" data-product-id="1">
+                            <div class="product-image-wrap">
+
+                                <img src="Images/baby-store-product-img-12.jpg" class="product-image"
+                                    alt="Extra Soft Touch Lamb Doll">
+
+                                <div class="product-actions" aria-label="Product actions">
+
+                                    <button type="button" class="product-action add-to-cart" data-tooltip="Add to cart"
+                                        data-product="Extra Soft Touch Lamb Doll"
+                                        aria-label="Add Extra Soft Touch Lamb Doll to cart">
+
+                                        <i class="bi bi-basket"></i>
+
+                                    </button>
+
+                                    <button type="button" class="product-action quick-view" data-tooltip="Quick View"
+                                        data-product="Extra Soft Touch Lamb Doll"
+                                        aria-label="Quick view Extra Soft Touch Lamb Doll">
+
+                                        <i class="bi bi-eye-fill"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <div class="product-details">
+
+                                <h3>
+                                    Extra Soft Touch Lamb Doll
+                                </h3>
+
+                                <p>$8.50</p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- PRODUCT 2 -->
+                    <div class="col">
+
+                        <article class="product-card" data-product-id="2">
+                            <div class="product-image-wrap">
+
+                                <img src="Images/baby-store-product-img-11.jpg" class="product-image"
+                                    alt="Twin Cute Bunny Set Combo">
+
+                                <div class="product-actions" aria-label="Product actions">
+
+                                    <button type="button" class="product-action add-to-cart" data-tooltip="Add to cart"
+                                        data-product="Twin Cute Bunny Set Combo"
+                                        aria-label="Add Twin Cute Bunny Set Combo to cart">
+
+                                        <i class="bi bi-basket"></i>
+
+                                    </button>
+
+                                    <button type="button" class="product-action quick-view" data-tooltip="Quick View"
+                                        data-product="Twin Cute Bunny Set Combo"
+                                        aria-label="Quick view Twin Cute Bunny Set Combo">
+
+                                        <i class="bi bi-eye-fill"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <div class="product-details">
+
+                                <h3>
+                                    Twin Cute Bunny Set Combo
+                                </h3>
+
+                                <p>$40.25</p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- PRODUCT 3 -->
+                    <div class="col">
+
+                        <article class="product-card" data-product-id="3">
+                            <div class="product-image-wrap">
+
+                                <img src="Images/baby-store-product-img-10.jpg" class="product-image"
+                                    alt="Colorful Birdies on Orange Bandana">
+
+                                <div class="product-actions" aria-label="Product actions">
+
+                                    <button type="button" class="product-action add-to-cart" data-tooltip="Add to cart"
+                                        data-product="Colorful Birdies on Orange Bandana"
+                                        aria-label="Add Colorful Birdies on Orange Bandana to cart">
+
+                                        <i class="bi bi-basket"></i>
+
+                                    </button>
+
+                                    <button type="button" class="product-action quick-view" data-tooltip="Quick View"
+                                        data-product="Colorful Birdies on Orange Bandana"
+                                        aria-label="Quick view Colorful Birdies on Orange Bandana">
+
+                                        <i class="bi bi-eye-fill"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <div class="product-details">
+
+                                <h3>
+                                    Colorful Birdies on Orange Bandana
+                                </h3>
+
+                                <p>$4.75</p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- PRODUCT 4 -->
+                    <div class="col">
+
+                        <article class="product-card" data-product-id="4">
+
+                            <div class="product-image-wrap">
+
+                                <img src="Images/baby-store-product-img-9.jpg" class="product-image"
+                                    alt="Nutrikids Food Nutrition DHA+ Orange">
+
+                                <div class="product-actions" aria-label="Product actions">
+
+                                    <button type="button" class="product-action add-to-cart" data-tooltip="Add to cart"
+                                        data-product="Nutrikids Food Nutrition DHA+ Orange"
+                                        aria-label="Add Nutrikids Food Nutrition DHA+ Orange to cart">
+
+                                        <i class="bi bi-basket"></i>
+
+                                    </button>
+
+                                    <button type="button" class="product-action quick-view" data-tooltip="Quick View"
+                                        data-product="Nutrikids Food Nutrition DHA+ Orange"
+                                        aria-label="Quick view Nutrikids Food Nutrition DHA+ Orange">
+
+                                        <i class="bi bi-eye-fill"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <div class="product-details">
+
+                                <h3>
+                                    Nutrikids Food Nutrition DHA+ Orange
+                                </h3>
+
+                                <p>$6.50</p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- PRODUCT 5 -->
+                    <div class="col">
+
+                        <article class="product-card " data-product-id="5">
+
+                            <div class="product-image-wrap">
+
+                                <img src="Images/baby-store-product-img-8.jpg" class="product-image"
+                                    alt="Sunny Outdoor Picnic Set Yellow">
+
+                                <div class="product-actions" aria-label="Product actions">
+
+                                    <button type="button" class="product-action add-to-cart" data-tooltip="Add to cart"
+                                        data-product="Sunny Outdoor Picnic Set Yellow"
+                                        aria-label="Add Sunny Outdoor Picnic Set Yellow to cart">
+
+                                        <i class="bi bi-basket"></i>
+
+                                    </button>
+
+                                    <button type="button" class="product-action quick-view" data-tooltip="Quick View"
+                                        data-product="Sunny Outdoor Picnic Set Yellow"
+                                        aria-label="Quick view Sunny Outdoor Picnic Set Yellow">
+
+                                        <i class="bi bi-eye-fill"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <div class="product-details">
+
+                                <h3>
+                                    Sunny Outdoor Picnic Set Yellow
+                                </h3>
+
+                                <p>$35.50</p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- PRODUCT 6 -->
+                    <div class="col">
+
+                        <article class="product-card" data-product-id="6">
+
+                            <div class="product-image-wrap">
+
+                                <img src="Images/baby-store-product-img-7.jpg" class="product-image"
+                                    alt="Teddy Bear Ready To Flight Doll">
+
+                                <div class="product-actions" aria-label="Product actions">
+
+                                    <button type="button" class="product-action add-to-cart" data-tooltip="Add to cart"
+                                        data-product="Teddy Bear Ready To Flight Doll"
+                                        aria-label="Add Teddy Bear Ready To Flight Doll to cart">
+
+                                        <i class="bi bi-basket"></i>
+
+                                    </button>
+
+                                    <button type="button" class="product-action quick-view" data-tooltip="Quick View"
+                                        data-product="Teddy Bear Ready To Flight Doll"
+                                        aria-label="Quick view Teddy Bear Ready To Flight Doll">
+
+                                        <i class="bi bi-eye-fill"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <div class="product-details">
+
+                                <h3>
+                                    Teddy Bear Ready To Flight Doll
+                                </h3>
+
+                                <p>$10.00</p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- PRODUCT 7 -->
+                    <div class="col">
+
+                        <article class="product-card" data-product-id="7">
+
+                            <div class="product-image-wrap">
+
+                                <img src="Images/baby-store-product-img-6.jpg" class="product-image"
+                                    alt="VitCom Nutrition Fruits Flavor">
+
+                                <div class="product-actions" aria-label="Product actions">
+
+                                    <button type="button" class="product-action add-to-cart" data-tooltip="Add to cart"
+                                        data-product="VitCom Nutrition Fruits Flavor"
+                                        aria-label="Add VitCom Nutrition Fruits Flavor to cart">
+
+                                        <i class="bi bi-basket"></i>
+
+                                    </button>
+
+                                    <button type="button" class="product-action quick-view" data-tooltip="Quick View"
+                                        data-product="VitCom Nutrition Fruits Flavor"
+                                        aria-label="Quick view VitCom Nutrition Fruits Flavor">
+
+                                        <i class="bi bi-eye-fill"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <div class="product-details">
+
+                                <h3>
+                                    VitCom Nutritian fruits Flavour
+                                </h3>
+
+                                <p>$9.00</p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- PRODUCT 8 -->
+                    <div class="col">
+
+                        <article class="product-card" data-product-id="8">
+
+                            <div class="product-image-wrap">
+
+                                <img src="Images/baby-store-product-img-5.jpg" class="product-image"
+                                    alt="Frosted White Plastic Bottle 400ml">
+
+                                <div class="product-actions" aria-label="Product actions">
+
+                                    <button type="button" class="product-action add-to-cart" data-tooltip="Add to cart"
+                                        data-product="Frosted White Plastic Bottle 400ml"
+                                        aria-label="Add Frosted White Plastic Bottle 400ml to cart">
+
+                                        <i class="bi bi-basket"></i>
+
+                                    </button>
+
+                                    <button type="button" class="product-action quick-view" data-tooltip="Quick View"
+                                        data-product="Frosted White Plastic Bottle 400ml"
+                                        aria-label="Quick view Frosted White Plastic Bottle 400ml">
+
+                                        <i class="bi bi-eye-fill"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <div class="product-details">
+
+                                <h3>
+                                    Frosted White Plastic Bottle 400ml
+                                </h3>
+
+                                <p>$6.25</p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORIES -->
+        <section class="categories-section py-5">
+
+            <img src="Images/baby-store-blob-pink.svg" class="pink-decoration position-absolute" alt="">
+
+            <div class="green-decoration position-absolute"></div>
+
+            <div class="container">
+
+                <div class="row align-items-center justify-content-between text-center mb-5 g-1">
+
+                    <div class="col">
+                        <img src="Images/logo-1.svg" class="img-fluid category-logo" alt="Logo">
+                    </div>
+
+                    <div class="col">
+                        <img src="Images/logo-2.svg" class="img-fluid category-logo" alt="Logo">
+                    </div>
+
+                    <div class="col">
+                        <img src="Images/logo-3.svg" class="img-fluid category-logo" alt="Logo">
+                    </div>
+
+                    <div class="col">
+                        <img src="Images/logo-4.svg" class="img-fluid category-logo" alt="Logo">
+                    </div>
+
+                    <div class="col">
+                        <img src="Images/logo-5.svg" class="img-fluid category-logo" alt="Logo">
+                    </div>
+
+                </div>
+
+
+                <div class="row g-1 justify-content-center">
+
+    <div class="col-md-4">
+
+        <a href="Shop.html" class="text-decoration-none">
+
+            <div class="category-card position-relative overflow-hidden rounded-4">
+
+                <img src="Images/baby-store-toys-banner-bg.jpg"
+                    class="w-100 h-100 object-fit-cover"
+                    alt="Toys">
+
+                <div
+                    class="category-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+
+                    <h3 class="text-white fst-italic fw-bold mb-0">
+                        Toys
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </a>
+
+    </div>
+
+
+    <div class="col-md-4">
+
+        <a href="Shop.html" class="text-decoration-none">
+
+            <div class="category-card position-relative overflow-hidden rounded-4">
+
+                <img src="Images/baby-store-clothes-banner-bg.jpg"
+                    class="w-100 h-100 object-fit-cover"
+                    alt="Clothes">
+
+                <div
+                    class="category-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+
+                    <h3 class="text-white fst-italic fw-bold mb-0">
+                        Clothes
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </a>
+
+    </div>
+
+
+    <div class="col-md-4">
+
+        <a href="Shop.html" class="text-decoration-none">
+
+            <div class="category-card position-relative overflow-hidden rounded-4">
+
+                <img src="Images/baby-store-nutrition-banner-bg.jpg"
+                    class="w-100 h-100 object-fit-cover"
+                    alt="Nutrition">
+
+                <div
+                    class="category-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+
+                    <h3 class="text-white fst-italic fw-bold mb-0">
+                        Nutrition
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TESTIMONIAL -->
+        <section class="testimonial-section position-relative overflow-hidden">
+
+            <div class="container">
+
+                <div class="text-center testimonial-heading">
+
+                    <h2 class="testimonial-title mb-3">
+                        Why They Love Us
+                    </h2>
+
+                    <a href="#" class="testimonial-link text-decoration-none">
+                        VIEW ALL TESTIMONIAL →
+                    </a>
+
+                </div>
+
+
+                <div class="row justify-content-center g-4 testimonial-row">
+
+                    <div class="col-lg-5 testimonial-column">
+
+                        <div class="testimonial-card position-relative">
+
+                            <img src="Images/baby-store-reviewer-1.jpg" class="testimonial-avatar" alt="Emma Hart">
+
+                            <div class="testimonial-content">
+
+                                <div class="testimonial-stars mb-3">
+                                    ★★★★★
+                                </div>
+
+                                <p class="testimonial-text mb-4">
+
+                                    “Massa amet, at dolor tellus pellentesque aenean in
+                                    eget massa tincidunt habitasse volutpat adipiscing
+                                    sed id sit auctor eu vivamus nulla.”
+
+                                </p>
+
+                                <p class="testimonial-name mb-0">
+                                    EMMA HART
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-5">
+
+                        <div class="testimonial-card position-relative">
+
+                            <img src="Images/baby-store-reviewer-2.jpg" class="testimonial-avatar" alt="Dianna Johnson">
+
+                            <div class="testimonial-content">
+
+                                <div class="testimonial-stars mb-3">
+                                    ★★★★★
+                                </div>
+
+                                <p class="testimonial-text mb-4">
+
+                                    “Malesuada eu mattis fermentum etiam arcu risus
+                                    lacus velit neque mi integer tincidunt sociis enim
+                                    gravida in pellentesque cursus sed.”
+
+                                </p>
+
+                                <p class="testimonial-name mb-0">
+                                    DIANNA JOHNSON
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter-section py-5">
+
+            <div class="container">
+
+                <div class="newsletter-box position-relative overflow-hidden rounded-4">
+
+                    <div class="newsletter-peach-shape position-absolute"></div>
+
+                    <div class="newsletter-green-shape position-absolute"></div>
+
+                    <div class="newsletter-content position-relative">
+
+                        <p class="newsletter-eyebrow mb-3">
+                            SUBSCRIBE TO OUR NEWSLETTER
+                        </p>
+
+                        <h2 class="newsletter-title mb-3">
+                            Don't Miss Out!
+                        </h2>
+
+                        <p class="newsletter-text mb-5">
+                            Get the latest on sales, special offer, new releases and more...
+                        </p>
+
+                        <form id="newsletterForm" class="newsletter-form d-flex flex-wrap gap-3">
+
+                            <input type="email" id="newsletterEmail" class="form-control newsletter-input"
+                                placeholder="Email Address *" required>
+
+                            <button type="submit" class="btn newsletter-button">
+
+                                SUBSCRIBE
+
+                            </button>
+
+                        </form>
+
+                        <div id="newsletterSuccess" class="newsletter-success text-center d-none">
+
+                            <div class="success-icon">
+                                <i class="bi bi-check2-circle"></i>
+                            </div>
+
+                            <h3>Thank you</h3>
+
+                            <p>
+
+                                Your form has been submitted successfully.
+                                We'll review your details and get back to you soon.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer-section">
+
+        <div class="container">
+
+            <div class="row footer-main">
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+
+                    <a href="index.html" class="footer-logo d-inline-block mb-4">
+
+                        <img src="Images/baby-store-logo.svg" alt="BabyKu Logo">
+
+                    </a>
+
+                    <p>123 Fifth Ave, New York, NY 12004.</p>
+                    <p>+1 123 456 78 90</p>
+                    <p>mail@example.com</p>
+
+                    <div class="footer-socials mt-3">
+
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+
+                    <h5>Customer Service</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Help & FAQs</a></li>
+                        <li><a href="#">Payment Method</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Return & Exchanges</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+
+                    <h5>Categories</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li><a href="#">Clothing & Fashion</a></li>
+                        <li><a href="#">Toys</a></li>
+                        <li><a href="#">School Supplies</a></li>
+                        <li><a href="#">Birthday Party Supplies</a></li>
+                        <li><a href="#">Baby Diapering</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h5>Our Company</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li><a href="#">Corporate Information</a></li>
+                        <li><a href="#">Privacy & Cookies Policy</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Promo & Terms</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p class="mb-0">
+                Copyright © 2026 Baby Store | Powered by Baby Store
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- LOGIN POPUP -->
+    <div class="login-modal" id="loginModal">
+
+        <div class="login-overlay">
+
+            <div class="login-box">
+
+                <button type="button" class="login-close" id="loginClose">
+                    &times;
+                </button>
+
+                <div id="loginFormContainer">
+
+                    <label for="loginEmail">
+                        Username or Email Address
+                    </label>
+
+                    <input type="email" id="loginEmail" class="login-input">
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <input type="password" id="loginPassword" class="login-input">
+
+                    <div class="login-remember">
+
+                        <input type="checkbox" id="rememberMe" checked>
+
+                        <label for="rememberMe">
+                            Remember Me
+                        </label>
+
+                    </div>
+
+                    <button type="button" id="loginButton" class="login-button">
+                        LOG IN
+                    </button>
+
+                    <p id="loginMessage" class="login-message"></p>
+
+                </div>
+
+
+                <!-- LOGGED IN -->
+                <div id="logoutContainer" class="d-none">
+
+                    <p class="logged-in-text">
+                        You are logged in.
+                    </p>
+
+                    <button type="button" id="logoutButton" class="login-button">
+                        LOG OUT
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- CART OFFCANVAS -->
+    <div class="offcanvas offcanvas-end cart-panel" tabindex="-1" id="cartPanel" aria-labelledby="cartPanelLabel">
+
+        <div class="offcanvas-header cart-header">
+
+            <h5 class="offcanvas-title" id="cartPanelLabel">
+
+                Shopping Cart
+
+            </h5>
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+            </button>
+
+        </div>
+
+
+        <div class="offcanvas-body cart-body" id="cartItems">
+
+            <!-- Cart products will come here -->
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-subtotal">
+
+                <span>Subtotal:</span>
+
+                <span id="cartSubtotal">
+                    $0.00
+                </span>
+
+            </div>
+
+
+            <button type="button" class="cart-button">
+
+                VIEW CART
+
+            </button>
+
+
+            <button type="button" class="cart-button">
+
+                CHECKOUT
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="JS/Script.js"></script>
+
+</body>
+
+</html>

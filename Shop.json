@@ -1,0 +1,88 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Extra Soft Touch Lamb Doll",
+            "price": 8.50,
+            "category": "Toys",
+            "image": "Images/baby-store-product-img-12.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Twin Cute Bunny Set Combo",
+            "price": 40.25,
+            "category": "Toys",
+            "image": "Images/baby-store-product-img-11.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Colorful Birdies on Orange Bandana",
+            "price": 4.75,
+            "category": "Clothes",
+            "image": "Images/baby-store-product-img-10.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Nutrikids Food Nutrition DHA+ Orange",
+            "price": 6.50,
+            "category": "Nutrition",
+            "image": "Images/baby-store-product-img-9.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Sunny Outdoor Picnic Set Yellow",
+            "price": 35.50,
+            "category": "Clothes",
+            "image": "Images/baby-store-product-img-8.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Teddy Bear Ready To Flight Doll",
+            "price": 10.00,
+            "category": "Toys",
+            "image": "Images/baby-store-product-img-7.jpg"
+        },
+        {
+            "id": 7,
+            "name": "VitCom Nutrition Fruits Flavor",
+            "price": 9.00,
+            "category": "Nutrition",
+            "image": "Images/baby-store-product-img-6.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Frosted White Plastic Bottle 400ml",
+            "price": 6.25,
+            "category": "Nursery",
+            "image": "Images/baby-store-product-img-5.jpg"
+        },
+        {
+            "id": 9,
+            "name": "ZooMate 3 Animal Set Toys",
+            "price": 12.70,
+            "category": "Toys",
+            "image": "Images/baby-store-product-img-4.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Cute Brown Sheep Sleeveless",
+            "price": 30.50,
+            "category": "Clothes",
+            "image": "Images/baby-store-product-img-3.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Long Sleeve Sweater Navy Blue",
+            "price": 36.25,
+            "category": "Clothes",
+            "image": "Images/baby-store-product-img-2-100x100.jpg"
+        },
+        {
+            "id": 12,
+            "name": "White Comfort Maxx",
+            "price": 28.00,
+            "category": "Toys",
+            "image": "Images/baby-store-product-img-1.jpg"
+        }
+    ]
+}
